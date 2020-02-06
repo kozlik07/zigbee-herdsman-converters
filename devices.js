@@ -7663,6 +7663,16 @@ const devices = [
         fromZigbee: [fz.blitzwolf_occupancy_with_timeout],
         toZigbee: [],
     },
+    // Ferguson Smart Home
+    {
+        zigbeeModel: ['PIR_TPV12'],
+        model: 'FS1MS',
+        vendor: 'Ferguson',
+        description: 'Smart motion sensor',
+        supports: 'occupancy',
+        fromZigbee: [fz.iaszone_occupancy_1],
+        toZigbee: [],
+    },
 ];
 
 module.exports = devices.map((device) =>
